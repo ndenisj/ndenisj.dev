@@ -1,4 +1,7 @@
 import React from "react";
+import Education from "./Education";
+import Work from "./Work";
+import Testimonial from "./Testimonial";
 
 const Resume = () => {
   return (
@@ -7,7 +10,11 @@ const Resume = () => {
         <h2 className="section-title">Resume</h2>
 
         <div className="resume-buttons header-page-buttons">
-          <a href="google" className="btn btn-default btn-default2">
+          <a
+            href="https://docs.google.com/document/d/1h3SG2dZd4DZ9McC4RUccj7Ga01rttRExpTDz7VactN4/edit?usp=sharing"
+            target="_blank"
+            className="btn btn-default btn-default2"
+          >
             <i className="fa fa-download"></i>&nbsp; Download my resume
           </a>
 
@@ -23,40 +30,7 @@ const Resume = () => {
           <i className="fa fa-university"></i>&nbsp; Education
         </h2>
 
-        <div className="resume-item">
-          <h3 className="section-item-title-1">Graphic Design</h3>
-
-          <h4 className="graduation-time">
-            St. Patrick University (2 Years Course) -{" "}
-            <span className="graduation-date">Graduation May 2013</span>
-          </h4>
-
-          <div className="graduation-description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-
-        <div className="resume-item">
-          <h3 className="section-item-title-1">Master of Web Design</h3>
-
-          <h4 className="graduation-time">
-            St. Patrick University (2 Years Course) - Graduation May 2013
-          </h4>
-
-          <div className="graduation-description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
+        <Education />
       </div>
 
       <div className="section-education">
@@ -64,74 +38,7 @@ const Resume = () => {
           <i className="fa fa-flag"></i>&nbsp; Work Experience
         </h2>
 
-        <div className="resume-item">
-          <h3 className="section-item-title-1">DotRex Co.</h3>
-
-          <h4 className="job">
-            Lead Designer -{" "}
-            <span className="job-date">June 2012 - Current</span>
-          </h4>
-
-          <div className="graduation-description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-
-        <div className="resume-item">
-          <h3 className="section-item-title-1">Oasis Ltda.</h3>
-
-          <h4 className="job">
-            Front-end Developer -{" "}
-            <span className="job-date">Jan 2010 - Apr 2012</span>
-          </h4>
-
-          <div className="graduation-description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-
-        <div className="resume-item">
-          <h3 className="section-item-title-1">Dupstudio</h3>
-
-          <h4 className="job">
-            Designer - <span className="job-date">Jan 2010 - Apr 2012</span>
-          </h4>
-
-          <div className="graduation-description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-
-        <div className="resume-item">
-          <h3 className="section-item-title-1">Black Tie Corp.</h3>
-
-          <h4 className="job">
-            Web Designer - <span className="job-date">Jan 2010 - Apr 2012</span>
-          </h4>
-          <div className="graduation-description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
+        <Work />
       </div>
 
       <h2 className="section-title2">
@@ -140,68 +47,17 @@ const Resume = () => {
 
       <div className="testimonials">
         <div className="testimonial-slides" id="testimonial-carousel">
-          <div className="testimonial-item">
-            <div className="testimonial-content">
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                consequat malesuada aliquet. Morbi vulputate nisl eget
-                adipiscing consequat. Cras arcu tortor, ornare vel libero et,
-                sagittis adipiscing leo. Aenean eget."
-              </p>
-            </div>
-
-            <div className="testimonial-credits">
-              <div className="testimonial-picture">
-                <img src="img/team2.jpg" alt="" />
-              </div>
-
-              <p className="testimonial-author">Melissa Alvarez</p>
-              <p className="testimonial-firm">Trexus Co.</p>
-            </div>
-          </div>
-
-          <div className="testimonial-item">
-            <div className="testimonial-content">
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                consequat malesuada aliquet. Morbi vulputate nisl eget
-                adipiscing consequat. Cras arcu tortor, ornare vel libero et,
-                sagittis adipiscing leo. Aenean eget."
-              </p>
-            </div>
-
-            <div className="testimonial-credits">
-              <div className="testimonial-picture">
-                <img src="img/team1.jpg" alt="" />
-              </div>
-
-              <p className="testimonial-author">John Rex</p>
-              <p className="testimonial-firm">DotRex Co.</p>
-            </div>
-          </div>
-          <div className="testimonial-item">
-            <div className="testimonial-content">
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                consequat malesuada aliquet. Morbi vulputate nisl eget
-                adipiscing consequat. Cras arcu tortor, ornare vel libero et,
-                sagittis adipiscing leo. Aenean eget."
-              </p>
-            </div>
-            <div className="testimonial-credits">
-              <div className="testimonial-picture">
-                <img src="img/team3.jpg" alt="" />
-              </div>
-              <p className="testimonial-author">Jhonathan Smith</p>
-              <p className="testimonial-firm">RedWings Co.</p>
-            </div>
-          </div>
+          <Testimonial />
         </div>
       </div>
 
       <div className="page-footer">
         <div className="resume-buttons">
-          <a href="#" className="btn btn-default btn-default2">
+          <a
+            href="https://docs.google.com/document/d/1h3SG2dZd4DZ9McC4RUccj7Ga01rttRExpTDz7VactN4/edit?usp=sharing"
+            target="_blank"
+            className="btn btn-default btn-default2"
+          >
             <i className="fa fa-download"></i>&nbsp; Download my resume
           </a>
           <a
@@ -212,8 +68,10 @@ const Resume = () => {
           </a>
         </div>
         <p className="footer-quote">
+          "What we do to survive does not define who we are" <br />
+          <i>Denis John</i> <br />
           "The best way to predict the future is to create it" <br />
-          <i>Peter Drucker</i>
+          <i>Abraham Lincoln</i>
         </p>
       </div>
     </div>
