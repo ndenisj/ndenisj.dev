@@ -1,5 +1,6 @@
 from django.urls import path, include
-from .views import *
+from blog.views import *
+from contact.views import *
 from rest_framework import routers
 
 router = routers.DefaultRouter()
